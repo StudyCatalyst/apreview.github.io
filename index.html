@@ -72,12 +72,21 @@
           <meta charset = "utf-8">
           <title>AP Review</title>
           <style>
+               /* .textContainer {
+                    padding: 20px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+               } */
+               * { 
+                    -moz-box-sizing: border-box; 
+                    -webkit-box-sizing: border-box; 
+                    box-sizing: border-box; 
+               }
                #topRect {
                     height: 400px;
                     width: 100%;
                     background-color: rgb(77, 77, 77);
                     text-align: left;
-                    /* padding: 0% 0% 0% 0%; */
+                    padding: 0% 0% 0% 15%;
                     margin: 0px 0px 0px 0px;
                     font-size: 90;
                     font-family: 'Trebuchet MS';
@@ -94,11 +103,21 @@
                     color: black;
                     border: 2px solid black;
                }
+               #sidebar {
+                    width: 25%;
+                    height: 500px;
+                    margin: 375px 12.5% 100px 61.5%;
+                    border: 2px solid green;
+                    font-size: 25;
+               }
           </style>
      </head>
      <body>
           <div id="topRect">AP Review</div>
-          <div id="page">Page</div>
+          <div id="page" class="textContainer">Page</div>
+          <div id="sidebar" class="textContainer">
+               <p>Sidebar Text<br>More Sidebar Text</p>
+          </div>
           <script>
                var count = 0;
                var button = document.getElementById("page");
