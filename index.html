@@ -19,18 +19,18 @@
                }
                #page {
                     position: absolute;
-                    width: 49%;
+                    width: 45%;
                     height: 1000px;
-                    margin: 375px 37.5% 100px 12.5%;
+                    margin: 375px 38.5% 100px 12.5%;
                     border: 2px solid red;
                     font-size: 35;
                     padding: 8px 10px 8px 10px;
                }
                #sidebar {
                     position: absolute;
-                    width: 24%;
+                    width: 25%;
                     height: 500px;
-                    margin: 375px 12.5% 100px 63.5%;
+                    margin: 375px 12.5% 100px 62.5%;
                     border: 2px solid green;
                     font-size: 25;
                }
@@ -49,11 +49,11 @@
                var sidebar = document.getElementById("sidebar");
                var onHover = function() {
                     sidebar.style.border = "5px solid green";
-                    sidebar.style.textEmphasisStyle.bold();
+                    sidebar.style.color = "green";
                }
                var offHover = function() {
                     sidebar.style.border = "2px solid green";
-                    sidebar.style.textEmphasisStyle.normalize();
+                    sidebar.style.color = "black";
                }
                sidebar.addEventListener("mouseover",onHover);
                sidebar.addEventListener("mouseleave",offHover);
