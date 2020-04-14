@@ -18,21 +18,22 @@
                }
                #page {
                     position: absolute;
-                    width: 50%;
+                    width: 49%;
                     height: 1000px;
                     margin: 375px 37.5% 100px 12.5%;
                     border: 2px solid red;
                     font-size: 35;
-                    font-family: 'Verdana';
+                    font-family:'Lucida Sans Regular';
+                    padding: 8px 10px 8px 10px;
                }
                #sidebar {
                     position: absolute;
                     width: 24%;
                     height: 500px;
-                    margin: 375px 12.5% 100px 63.5%;
+                    margin: 375px 12.5% 100px 65.5%;
                     border: 2px solid green;
                     font-size: 25;
-                    font-family: 'Gill Sans MT';
+                    font-family:'Franklin Gothic Medium';
                }
           </style>
      </head>
@@ -49,9 +50,11 @@
                var sidebar = document.getElementById("sidebar");
                var onHover = function() {
                     sidebar.style.border = "5px solid green";
+                    sidebar.style.textEmphasisStyle.bold();
                }
                var offHover = function() {
                     sidebar.style.border = "2px solid green";
+                    sidebar.style.textEmphasisStyle.normalize();
                }
                sidebar.addEventListener("mouseover",onHover);
                sidebar.addEventListener("mouseleave",offHover);
