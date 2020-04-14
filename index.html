@@ -13,12 +13,17 @@
                     font-family: 'Trebuchet MS';
                     color: white;
                }
+               .textContainer {
+                    padding: 10px;
+               }
                #page {
                     position: absolute;
                     width: 50%;
                     height: 1000px;
                     margin: 375px 12.5% 100px 12.5%;
                     border: 2px solid red;
+                    font-size: 35;
+                    font-family: 'Verdana';
                }
                #sidebar {
                     position: absolute;
@@ -26,16 +31,18 @@
                     height: 500px;
                     margin: 375px 12.5% 100px 63.5%;
                     border: 2px solid green;
+                    font-size: 25;
+                    font-family: 'Gill Sans MT';
                }
           </style>
      </head>
      <body>
           <div id="topRect"><br>AP Review</div>
           
-          <div id="page">
+          <div id="page" class="textContainer">
                <p>Page Text</p>
           </div>
-          <div id="sidebar">
+          <div id="sidebar" class="textContainer">
                <p>Sidebar Text</p>
           </div>
      </body>
