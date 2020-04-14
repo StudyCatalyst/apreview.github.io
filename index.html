@@ -45,5 +45,16 @@
           <div id="sidebar" class="textContainer">
                <p>Sidebar Text</p>
           </div>
+          <script>
+               var sidebar = document.getElementById("sidebar");
+               var onHover = function() {
+                    sidebar.style.border = "5px";
+               }
+               var offHover = function() {
+                    sidebar.style.border = "2px";
+               }
+               sidebar.addEventListener("mouseover",onHover);
+               sidebar.addEventListener("mouseleave",offHover);
+          </script>
      </body>
 </html>
