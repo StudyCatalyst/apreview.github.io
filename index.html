@@ -45,7 +45,16 @@
                <p>Sidebar Text<br>More Sidebar Text</p>
           </div>
           <script>
+               var topRect = document.getElementById("topRect");
+               topRect.style.width = window.outerWidth;
+               var page = document.getElementById("page");
+               page.style.width = 0.49 * window.outerWidth;
+               page.style.margin = "375px " + toString((0.375*window.outerWidth)) + "px 100px " + toString((0.125*window.outerWidth)) + "px";
                var sidebar = document.getElementById("sidebar");
+               sidebar.style.width = 0.24 * window.outerWidth;
+               sidebar.style.margin = "375px " + toString((0.125*window.outerWidth)) + "px 100px " + toString((0.635*window.outerWidth)) + "px";
+               
+
                var onHover = function() {
                     sidebar.style.border = "5px solid green";
                     sidebar.style.color = "green";
